@@ -1,0 +1,12 @@
+{
+  "name": "tu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "globby": "^13.1.1",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  }
+}
