@@ -1,0 +1,18 @@
+{
+  "name": "uricio",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "tsc -b packages/api-common",
+    "test": "lerna run test",
+    "dev": "lerna run dev",
+    "clean": "rimraf packages/**/lib"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "private": true,
+  "workspaces": [
+    "packages",
+    "apps"
+  ]
+}

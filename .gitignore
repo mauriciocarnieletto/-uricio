@@ -1,0 +1,10 @@
+node_modules
+
+.cache
+.vercel
+.output
+
+/build/
+/dist/
+/public/build
+/api/index.js
