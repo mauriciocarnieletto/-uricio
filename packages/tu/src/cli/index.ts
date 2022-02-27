@@ -1,8 +1,9 @@
 import { findTests } from "./tests-searcher";
 import yargs from "yargs";
 
-yargs.usage("$0 <cmd> [args]");
+const options = yargs.usage("$0 <cmd> [args]").argv;
 
 export async function run() {
-  await findTests();
+  console.log(options);
+  console.log(await findTests());
 }

@@ -1,6 +1,6 @@
-import { globby } from "globby";
+import fg from "fast-glob";
 
 export async function findTests() {
-  const paths = await globby(["**/*.spec.ts", "**/*.test.ts"]);
+  const paths = await fg(["./src/**/*.spec.ts", "./src/**/*.test.ts"]);
   return paths;
 }
