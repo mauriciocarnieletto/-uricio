@@ -1,8 +1,15 @@
 import { init } from "../../core/init";
 
 export async function runner(filesToRun: string[]) {
-  await (await init()).setupGlobals();
-  for (const file of filesToRun) {
-    await import(`${process.cwd()}/${file}`);
-  }
+  const { setupGlobals, executionContext } = await init();
+  await setupGlobals();
+  await Promise.all(
+    filesToRun.map((file) => import(`${process.cwd()}/${file}`))
+  );
+
+  console.log(executionContext);
+
+  executionContext.executions.map((execution) => execution.test());
+
+
 }
