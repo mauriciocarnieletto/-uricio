@@ -1,6 +1,29 @@
 describe("expect", () => {
-  it("Should be able to run the expect method", () => {
-    const bindedExpect = expect("test");
-    expect(bindedExpect).toBeTruthy();
+  it("toBe - should pass when assertion succeeds", () => {
+    expect(1).toBe(1);
+  });
+
+  it("toBe - should throw an exception when the assertion fails", () => {
+    let didThrow = false;
+    try {
+      expect(1).toBe(2);
+    } catch {
+      didThrow = true;
+    }
+    expect(didThrow).toBe(true);
+  });
+
+  it("toBeTruthy - should pass when assertion succeeds", () => {
+    expect(true).toBeTruthy();
+  });
+
+  it("toBeTruthy - should throw an exception when the assertion fails", () => {
+    let didThrow = false;
+    try {
+      expect(0).toBeTruthy();
+    } catch {
+      didThrow = true;
+    }
+    expect(didThrow).toBe(true);
   });
 });

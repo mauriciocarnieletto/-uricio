@@ -1,12 +1,8 @@
-import tsNode from "ts-node";
 import { init } from "../../core/init";
 
 export async function runner(filesToRun: string[]) {
-  await init().setupGlobals();
-  console.log(filesToRun);
+  await (await init()).setupGlobals();
   for (const file of filesToRun) {
-    const filePath = `${process.cwd()}/${file}`;
-    const testFile = await import(filePath);
-    console.log(testFile, file);
+    await import(`${process.cwd()}/${file}`);
   }
 }
