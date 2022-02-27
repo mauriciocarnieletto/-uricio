@@ -16,6 +16,10 @@
   "exclude": [
     "node_modules",
     "dist",
-    "__test__"
   ],
+  "baseUrl": "./src",
+  "paths": {
+    "@core": "./core",
+    "@cli": "./cli",
+  },
 }
