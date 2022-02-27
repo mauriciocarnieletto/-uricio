@@ -4,7 +4,7 @@ node_modules
 .vercel
 .output
 
-/build/
-/dist/
+build
+dist
 /public/build
 /api/index.js
