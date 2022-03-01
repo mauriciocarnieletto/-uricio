@@ -1,5 +1,5 @@
 {
-  "name": "@uricio/tu",
+  "name": "@uricio/ut",
   "version": "1.0.0",
   "license": "MIT",
   "type": "commonjs",
@@ -23,6 +23,6 @@
     "@types/yargs": "^17.0.8"
   },
   "bin": {
-    "uricio-tu": "./dist/bin.js"
+    "uricio-ut": "./dist/bin.js"
   }
 }

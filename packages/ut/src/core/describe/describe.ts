@@ -7,8 +7,6 @@ export async function describeContext(
   return async function describe(description: string, test: () => void) {
     const blockExecutionContext = new TestExecutionContext();
 
-    test.bind(blockExecutionContext);
-
     executionContext.push({
       description,
       test: async () => {

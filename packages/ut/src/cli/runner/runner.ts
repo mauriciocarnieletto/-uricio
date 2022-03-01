@@ -12,8 +12,6 @@ export async function runner(filesToRun: string[]) {
   await Promise.all(
     executionContext.executions.map((execution) => execution.test())
   );
+
   executionContext.executions.map((execution) => execution.test());
-
-
-
 }
