@@ -1,0 +1,16 @@
+{
+  "name": "alg-studies",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "license": "MIT",
+  "module": "modules",
+  "scripts": {
+    "test": "uricio-ut"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.5",
+    "@uricio/ut": "0.0.0"
+  },
+  "dependencies": {}
+}

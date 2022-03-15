@@ -27,3 +27,19 @@ describe("expect", () => {
     expect(didThrow).toBe(true);
   });
 });
+
+it("inside it", () => {
+  expect(1).toBe(1);
+});
+
+function par() {
+  console.log(`parent`);
+}
+
+function independent() {
+  console.log(`independent`);
+}
+
+function describableWrapper() {
+  console.log(`describableWrapper`);
+}

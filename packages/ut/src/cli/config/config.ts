@@ -1,6 +1,6 @@
 const DEFAULT_TEST_PATTERN = ["./src/**/*.spec.ts", "./src/**/*.test.ts"];
 const DEFAULT_TEST_FILE_SULFIX = "spec.(ts|js|tsx|jsx)";
-const DEFAULT_CONFIG_FILE_PATTH = process.cwd() + "/tu.config.js";
+const DEFAULT_CONFIG_FILE_PATTH = process.cwd() + "/ut.config.js";
 
 export interface Config {
   testFileSuffix: string;

@@ -7,8 +7,6 @@ export async function runner(filesToRun: string[]) {
     filesToRun.map((file) => import(`${process.cwd()}/${file}`))
   );
 
-  console.log(executionContext);
-
   await Promise.all(
     executionContext.executions.map((execution) => execution.test())
   );
