@@ -1,8 +1,9 @@
 {
-  "name": "challanges",
+  "name": "@uricio/challanges",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "test": "jest",
     "test:py": "python3 ./py-src/test.py"
