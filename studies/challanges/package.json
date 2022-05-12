@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:py": "python3 ./py-src/test.py"
   },
   "devDependencies": {
     "@uricio/ut": "^0.0.0",

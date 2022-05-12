@@ -5,7 +5,7 @@ Write a function to find the longest common prefix string amongst an array of st
 
 If there is no common prefix, return an empty string "".
 
- 
+
 
 Example 1:
 
@@ -16,15 +16,15 @@ Example 2:
 Input: strs = ["dog","racecar","car"]
 Output: ""
 Explanation: There is no common prefix among the input strings.
- 
+
 
 Constraints:
 
 1 <= strs.length <= 200
 0 <= strs[i].length <= 200
 strs[i] consists of only lower-case English letters.
-* @param strs 
- * @returns 
+* @param strs
+ * @returns
  */
 export function longestCommonPrefix(strs: string[]): string {
   if (strs.length === 0) {
@@ -40,12 +40,10 @@ export function longestCommonPrefix(strs: string[]): string {
   const commonPrefixes = words.map((word) => getCommonPrefix(firstWord, word));
 
   const prefixesThatMatch = commonPrefixes.filter((prefix) =>
-    commonPrefixes.every((otherPrefix) => otherPrefix.startsWith(prefix))
+    commonPrefixes.every((otherPrefix) => otherPrefix.indexOf(prefix) === 0)
   );
 
-  const greatestPrefix = prefixesThatMatch.sort(
-    (a, b) => b.length - a.length
-  )[0];
+  const greatestPrefix = prefixesThatMatch.sort((a, b) => b.length - a.length)[0];
 
   return greatestPrefix;
 }
