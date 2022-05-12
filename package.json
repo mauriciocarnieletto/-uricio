@@ -4,7 +4,7 @@
     "build": "turbo run build",
     "test": "turbo run test",
     "dev": "turbo run dev --parallel --no-cache",
-    "clean": "rimraf **/dist/ && rimraf **/node_modules/ && node_modules && dist"
+    "clean": "rimraf **/dist/ && rimraf **/node_modules/ && rimraf node_modules && rimraf dist && rimraf yarn.lock"
   },
   "dependencies": {},
   "devDependencies": {
