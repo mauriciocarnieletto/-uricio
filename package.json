@@ -5,7 +5,7 @@
     "test": "turbo run test",
     "lint": "turbo run lint",
     "dev": "turbo run dev --parallel --no-cache",
-    "clean": "rimraf **/dist/ && rimraf **/node_modules/ && rimraf node_modules && rimraf dist && rimraf yarn.lock"
+    "clean": " rimraf ./build && rimraf **/dist/ && rimraf ./yarn.lock && rimraf **/node_modules/"
   },
   "dependencies": {},
   "devDependencies": {
