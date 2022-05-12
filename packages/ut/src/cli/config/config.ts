@@ -15,7 +15,7 @@ export async function getConfig(
     return config;
   } catch {
     console.warn(
-      `No config file found at ${configFile}, using default config.`
+      `No config file found at ${configFile}, using default configuration.`
     );
   }
 
