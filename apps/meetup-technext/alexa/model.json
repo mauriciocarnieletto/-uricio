@@ -1,0 +1,45 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "meetup de tecnologia do next",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "SorteioMeetup",
+          "slots": [],
+          "samples": [
+            "sorteie um brinde",
+            "faça mais um sorteio",
+            "faça um sorteio",
+            "sorteie um kit para o pessoal"
+          ]
+        },
+        {
+          "name": "SorteioXunxo",
+          "slots": [],
+          "samples": [
+            "faz um sorteio pra mim",
+            "me sorteie",
+            "me faz um sorteio"
+          ]
+        }
+      ],
+      "types": []
+    }
+  }
+}
