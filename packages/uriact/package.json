@@ -1,0 +1,12 @@
+{
+  "name": "uriact",
+  "version": "0.0.0",
+  "description": "My version of React",
+  "main": "index.js",
+  "author": "Maurício Francisco Carnieletto",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "typescript": "^4.8.4"
+  }
+}
