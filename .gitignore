@@ -4,6 +4,8 @@ node_modules
 .vercel
 .output
 
+coverage
+
 build
 dist
 /public/build
