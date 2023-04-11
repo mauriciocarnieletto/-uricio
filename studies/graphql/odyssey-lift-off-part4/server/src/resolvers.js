@@ -1,4 +1,25 @@
 const resolvers = {
+  Mutation: {
+    incrementTrackViews: async (_, { id }, { dataSources }) => {
+      try {
+        const track = await dataSources.trackAPI.incrementTrackViews(id);
+
+        return {
+          code: 200,
+          success: true,
+          message: "Number Of Views increased successfully",
+          track,
+        };
+      } catch (err) {
+        return {
+          code: err.extensions.response.status,
+          success: false,
+          message: err.extensions.response.body,
+          track: null,
+        };
+      }
+    },
+  },
   Query: {
     // returns an array of Tracks that will be used to populate the homepage grid of our web client
     tracksForHome: (_, __, { dataSources }) => {

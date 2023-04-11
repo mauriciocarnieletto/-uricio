@@ -1,4 +1,4 @@
-const { gql } = require('apollo-server');
+const { gql } = require("apollo-server");
 
 const typeDefs = gql`
   type Query {
@@ -8,6 +8,17 @@ const typeDefs = gql`
     track(id: ID!): Track!
     "Fetch a specific module, provided a module's ID"
     module(id: ID!): Module!
+  }
+
+  type Mutation {
+    incrementTrackViews(id: ID!): IncrementTrackViewsResponse!
+  }
+
+  type IncrementTrackViewsResponse {
+    code: Int!
+    success: Boolean!
+    message: String!
+    track: Track
   }
 
   "A track is a group of Modules that teaches about a specific topic"
